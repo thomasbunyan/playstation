@@ -1,0 +1,38 @@
+.wrapper {
+  background-color: #121923;
+  color: #9ea7b6;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.wrapper img {
+  width: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.wrapper h1 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 18pt;
+}
+
+.wrapper span {
+  margin: 2px 0;
+  padding: 15px 30px;
+  width: 100%;
+  cursor: pointer;
+}
+.wrapper span:hover {
+  background-color: #10232e;
+}
+
+.wrapper span i {
+  font-size: 1.3em;
+  margin-right: 10px;
+}

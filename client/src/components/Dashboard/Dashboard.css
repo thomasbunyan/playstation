@@ -1,0 +1,23 @@
+.dashboard {
+  background-color: #ebeaef;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.mobileTitle {
+  width: 100%;
+  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  background-color: #121923;
+  color: white;
+}
+
+.mobileTitle i {
+  font-size: 1.5em;
+}

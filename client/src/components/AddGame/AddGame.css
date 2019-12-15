@@ -1,0 +1,171 @@
+.addGame {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 10 !important;
+}
+
+.addWindow {
+  width: 95vw;
+  height: 95vh;
+  max-width: 900px;
+  max-height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  /* overflow-x: scroll; */
+  justify-content: space-evenly;
+  overflow-x: auto;
+  flex-wrap: wrap;
+}
+
+.left {
+  /* width: 50%; */
+  /* min-width: 450px; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.addGameArt {
+  width: 250px;
+  max-height: 350px;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.addGameArt input[type="file"]::-webkit-file-upload-button {
+  font-size: 400px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.addGameArt img {
+  width: 100%;
+  border-radius: 15px;
+}
+.gameArtPlaceholder {
+  width: 100%;
+  height: 350px;
+  border-radius: 15px;
+  background-color: rgb(216, 216, 216);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gameArtPlaceholder i {
+  margin: 10px 0;
+  font-size: 3em;
+}
+.gameArtPlaceholder p {
+  font-size: 10pt;
+}
+
+.right {
+  /* width: 50%; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.platform {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.platformIcon {
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+  /* background-color: #cecece; */
+  cursor: pointer;
+  border-radius: 10px;
+  border: 3px rgb(128, 128, 128) solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.platformIcon:nth-child(1) {
+  margin: 0;
+}
+.platformIcon img {
+  width: 90%;
+  pointer-events: none;
+}
+
+.inputArea {
+  width: 95%;
+  margin: 10px 0;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.textInput {
+  padding: 10px;
+  background-color: rgb(216, 216, 216);
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 90%;
+  margin: 0 15px;
+}
+label {
+  width: 150px;
+}
+
+.errors {
+  opacity: 0;
+  color: red;
+  margin-bottom: 15px;
+}
+
+.addGameButton {
+  background-color: #016fce;
+  padding: 15px 20px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 10pt;
+  cursor: pointer;
+}
+
+.closeWindowButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 20px 0 0;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+
+@media screen and (max-width: 947px) {
+  .addWindow {
+  }
+
+  .left {
+    width: 100% !important;
+  }
+  .right {
+    width: 100% !important;
+  }
+}

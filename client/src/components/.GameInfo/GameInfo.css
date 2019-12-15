@@ -1,0 +1,28 @@
+.gameInfo > h2 {
+  font-size: 2em;
+}
+.boxArt {
+  margin-bottom: 10px;
+}
+.boxArt > img {
+  max-width: 380px;
+  max-height: 500px;
+}
+.platformImage {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.gameInfoCols {
+  display: flex;
+  flex-direction: row;
+}
+.gameInfoCols > div:nth-child(1) {
+  margin-right: 40px;
+}
+.gameInfoCols > div > p {
+  font-weight: bold;
+  margin-top: 15px;
+}
+.gameInfoCols > div > p > span {
+  font-weight: normal;
+}
