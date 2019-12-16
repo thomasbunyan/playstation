@@ -38,7 +38,7 @@ The following is my submission for the PlayStation software engineer coding chal
 
 ### Backend
 
-The backend of the application was written using Node.js and Express.js. This allowed me to build an API which could be queried to POST and GET data. This was coupled with a MongoDB database (hosted at [mongoDB](https://cloud.mongodb.com/)) which would be able to store the data for the app. The API was made by assigning route endpoints, each of which would serve a given purpose. For example to retrieve the list of games, the API must be queried at `api/games`, which would return the list of all games.
+The backend of the application was written using Node.js and Express.js. This allowed me to build an API which could be queried to POST and GET data. This was coupled with a MongoDB database (hosted at [mongoDB](https://cloud.mongodb.com/)) which would be able to store the data for the app. The API was made by assigning route endpoints, each of which would serve a given purpose. For example to retrieve the list of games, the API must be queried at `api/games`, which would return the list of all games. The uploaded images for the box art was also stored on the server.
 
 ### Frontend
 
