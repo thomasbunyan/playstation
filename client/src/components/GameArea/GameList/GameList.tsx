@@ -77,9 +77,9 @@ export class GameList extends Component<{ searchQuery: string; appendGame: any }
             <div className="oButton" onClick={() => this.toggleViewGame(game)}>
               <i className="fas fa-eye"></i>
             </div>
-            <div className="oButton remove" onClick={this.removeGame}>
+            {/* <div className="oButton remove" onClick={this.removeGame}>
               <i className="fas fa-trash"></i>
-            </div>
+            </div> */}
           </div>
         </div>
       );

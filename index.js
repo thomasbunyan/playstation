@@ -3,7 +3,6 @@ const app = express();
 const mongoose = require("mongoose");
 const path = require("path");
 const cors = require("cors");
-require("dotenv").config();
 
 // Body parsing middleware
 app.use(express.json());
@@ -11,8 +10,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
 // Connect to DB
+const MONGO_URL = "mongodb+srv://tom:0jk7FehIzIcBRtBK@projects-9nj1p.mongodb.net/playstation?retryWrites=true&w=majority";
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect(MONGO_URL, {
     useNewUrlParser: true,
     useFindAndModify: false,
     useCreateIndex: true,
@@ -31,7 +31,9 @@ app.use("*", (req, res) => {
   res.status(400).json("Bad request");
 });
 
+const PORT = 4000;
+
 // Start server
-app.listen(process.env.PORT, () => {
-  console.log("Server started on port: " + process.env.PORT);
+app.listen(PORT, () => {
+  console.log("Server started on port: " + PORT);
 });
