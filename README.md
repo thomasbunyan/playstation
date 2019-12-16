@@ -2,6 +2,7 @@
 
 The following is my submission for the PlayStation software engineer coding challenge. This is a web application which allows a user to manage a PlayStation game library. Users are able to view games and add games to the list.
 
+Note: this document is more readable on GitHub.
 [GitHub link](https://github.com/thomasbunyan/playstation)
 
 ## Table of Contents
