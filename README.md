@@ -8,7 +8,7 @@ The following is my submission for the PlayStation software engineer coding chal
 
 [Deployment](https://github.com/thomasbunyan/playstation#deployment)
 
-[Built With](https://github.com/thomasbunyan/playstation#getting-started)
+[Built With](https://github.com/thomasbunyan/playstation#built-with)
 
 [Design](https://github.com/thomasbunyan/playstation#design)
 
